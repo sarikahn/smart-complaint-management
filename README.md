@@ -22,6 +22,11 @@
 - Update complaint status
 - Monitor dashboard analytics
 
+## 📸 Project Screenshots
+
+### Dashboard View
+![Dashboard Screenshot] (images/dashboard.png/dashboard1.png)
+
 
 
 ## 📊 Dashboard Logic
