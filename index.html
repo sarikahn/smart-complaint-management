@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Complaint Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>🧠 Smart Complaint Management System</h1>
+  <p class="tagline">Advanced Tracking • Analytics • Automation</p>
+
+  <button onclick="toggleTheme()">🌙 Toggle Dark Mode</button>
+
+  <!-- ROLE -->
+  <div class="card">
+    <label>Role:</label>
+    <select id="role">
+      <option>User</option>
+      <option>Admin</option>
+    </select>
+  </div>
+
+  <!-- FORM -->
+  <div class="card">
+    <h2>📨 Register Complaint</h2>
+    <form id="complaintForm">
+      <input type="text" id="name" placeholder="Your Name" required>
+
+      <select id="category">
+        <option>Electricity</option>
+        <option>Water</option>
+        <option>Internet</option>
+        <option>Cleanliness</option>
+        <option>Road</option>
+      </select>
+
+      <select id="priority">
+        <option>Low</option>
+        <option>Medium</option>
+        <option>High</option>
+      </select>
+
+      <textarea id="description" placeholder="Complaint description" required></textarea>
+
+      <button type="submit">Submit Complaint</button>
+    </form>
+  </div>
+
+  <!-- DASHBOARD -->
+  <div class="card">
+    <h2>📊 Dashboard</h2>
+    <p>Total: <strong id="total">0</strong></p>
+    <p>Pending: <strong id="pending">0</strong></p>
+    <p>Resolved: <strong id="resolved">0</strong></p>
+  </div>
+
+  <!-- SEARCH & FILTER -->
+  <div class="card">
+    <h2>🔍 Search & Filter</h2>
+    <input type="text" id="search" placeholder="Search by name or ID">
+    <select id="filterCategory">
+      <option value="All">All Categories</option>
+      <option>Electricity</option>
+      <option>Water</option>
+      <option>Internet</option>
+      <option>Cleanliness</option>
+      <option>Road</option>
+    </select>
+  </div>
+
+  <!-- LIST -->
+  <div class="card">
+    <h2>📌 Complaints</h2>
+    <ul id="complaintList"></ul>
+    <button onclick="exportCSV()">⬇ Export CSV</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
